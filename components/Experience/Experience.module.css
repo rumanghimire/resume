@@ -1,0 +1,149 @@
+@import "../../vars.css";
+
+.hai {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 50px;
+  margin-block-start: 100px;
+  z-index: 1;
+  margin-inline-start: 10%;
+  margin-inline-end: 10%;
+}
+
+.experience1{
+  color : var(--color-text);
+  text-align: center;
+  color: white;
+
+}
+.experienceItem{
+ 
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 10px;
+  
+}
+
+.experienceItem1{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50px;
+    list-style: none;
+    padding: 25px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(165, 215, 232, 0.42) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+  
+}
+.experienceItem1:hover {
+  background-size: 100% 100%;
+}
+
+.IBM{
+  font-size: 25px;
+  font-weight: bolder;
+  margin-inline-start: 20px;
+  
+  
+}
+
+.IBMposition{
+
+    font-size: 20px;
+    font-weight: 600;
+    margin-inline-start: 20px;
+    font-style: italic;
+  }
+
+
+
+
+
+.experienceItem1 p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-inline-start: 20px;
+}
+
+.LSBDClogo{
+  
+  inline-size: 200px;
+  border-radius: 50px;
+
+}
+
+@media screen and (max-inline-size: 830px) {
+  .hai {
+    background-color: transparent;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+
+
+  .experienceItem {
+    margin-block-start: 29px;
+  }
+
+  .experienceItem1 {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hai {
+    padding: 20px;
+    margin-block-start: 50px;
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+  }
+
+  .experienceItem1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .IBM {
+    font-size: 20px;
+    margin-inline-start: 0;
+  }
+
+  .IBMposition {
+    font-size: 16px;
+    margin-inline-start: 0;
+  }
+
+  .experienceItem1 p {
+    font-size: 14px;
+    margin-inline-start: 0;
+  }
+
+  .LSBDClogo {
+    inline-size: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+

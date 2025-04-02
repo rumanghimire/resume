@@ -1,0 +1,213 @@
+.container {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 73px;
+    margin-block-start: 50px;
+    z-index: 1;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+  }
+  
+  .title {
+    margin-top: -50px;
+    color: var(--color-text);
+    text-align: center;
+  }
+  
+  .maintitle {
+    color: var(--color-text);
+    text-align: center;
+  }
+  
+  .projectItem {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .projectItem1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 25px;
+    background-image: linear-gradient(90deg, rgba(165, 215, 232, 0.42) 0%, rgba(255, 255, 255, 0) 100%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+  }
+  
+  /* Add styles for the Slider if needed */
+  .slider {
+    width : 500px;
+    
+    margin: auto 0;
+    align-items: center;
+    
+  }
+  
+  /* Add styles for the container of slider and info */
+  .slider-container {
+    direction: relative;
+    align-items: center;
+    left : 100px;
+    position: absolute;
+  }
+  
+  /* Add styles for the info container */
+  .info {
+    margin-left : 0px; /* Adjust left margin to position next to the image */
+    padding: 20px; /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Add styles for the project heading */
+  .projectheading {
+    margin-right: 100px;
+    margin: 10; /* Remove any default margin */
+    text-align: centr;
+  }
+  
+  /* Add styles for the project description */
+  .projectDescription {
+    margin: 0; /* Remove any default margin */
+  }
+  
+  /* Center the image within its container */
+  
+  
+  /* Adjust the size of the image */
+  .lizPhoto {
+    
+    inline-size: 500px;
+    align-items: center;
+  }
+  .projectItems1:hover {
+    background-size: 100% 100%;
+  }
+
+  .projectItems1 p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-inline-start: 20px;
+  }
+  
+  .todo{
+    height : 300px;
+    width : 500px;
+
+  }
+  a {
+    color: red; /* Set the color of the link to white */
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+     /* Remove the underline */
+  }
+  .link{
+    text-align: center;
+  }
+
+  .Photo {
+    height : 300px;
+    inline-size: 500px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 25px;
+      margin-inline-start: 5%;
+      margin-inline-end: 5%;
+    }
+  
+    .title, .maintitle {
+      font-size: 20px;
+      margin-top: 0;
+    }
+  
+    .projectItem1 {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+      gap: 10px;
+    }
+  
+    .slider-container {
+      position: static;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .slider {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .lizPhoto, .Photo, .todo {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+    }
+  
+    .info {
+      margin-top: 10px;
+      padding: 15px;
+    }
+  
+    .projectheading {
+      margin: 0;
+      text-align: center;
+      font-size: 18px;
+    }
+  
+    .projectItems1 p {
+      font-size: 14px;
+      margin-inline-start: 0;
+    }
+  
+    .link a {
+      font-size: 16px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+
+  .marquee {
+    overflow: hidden;
+    color: var(--color-text);
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding: 0.5rem 0;
+    margin-bottom: -10rem;
+    border-radius: 8px;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+    font-weight: bold;
+    color: var(--color-text);
+    font-size: 1.2rem;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  

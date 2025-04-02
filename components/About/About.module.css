@@ -1,0 +1,117 @@
+.educationSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* spacing between image and info */
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.ulmLogo {
+  width: 100px; /* adjust size as needed */
+  height: auto;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.educationInfo {
+  flex: 1; /* take up remaining space */
+}
+
+.educationInfo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.educationInfo h3 {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.educationInfo p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+
+.skill {
+  width : 1200px;
+  margin: 60px auto;
+  color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+h1 {
+  text-align: center;
+}
+
+.toolsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+}
+
+.tool img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.tool p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .educationSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 60px;
+  }
+
+  .ulmLogo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .educationInfo {
+    text-align: center;
+  }
+
+  .skill {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .toolsRow {
+    gap: 20px;
+  }
+
+  .tool {
+    width: 80px;
+  }
+
+  .tool img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tool p {
+    font-size: 0.9rem;
+  }
+}
